@@ -17,6 +17,11 @@
             #div_search {
                 float: right;
                 background-color: white;
+                border: none;
+            }
+            #div_search input[type="text"] {
+                background-color: white;
+                border: none;
             }
             body {
                 background-image: url('img/bg.png');
@@ -24,6 +29,20 @@
             ul {
                 list-style-type: none;
             }
+            .icon {
+                background-color: white;
+                border: none;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            .button {
+                cursor: pointer;
+            }
+            
         </style>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
     </head>
@@ -39,9 +58,11 @@
             </div>
             <div id="div_search">
                 <input type="text" placeholder="Enter a destination or keyword" name="searchText">
-                <button onClick="retrievePlaces()">Search</button>
-                <button>Clear</button>
+                <button class="icon" onClick="retrievePlaces()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="button" onClick="retrievePlaces()">Search</button>
+                <button class="button" onClick="clearAll()">Clear</button>
             </div>
+        
         </div>
         <div id="div_mainBody">
             <div id="div_bodyTitle">

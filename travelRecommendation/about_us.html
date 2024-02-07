@@ -6,9 +6,16 @@
                 background-color: black;
                 color: white;
             }
+            #div_bodySubtitle {
+                padding: 16px;
+            }
             #div_menu a{
                 text-decoration: none;
                 color: white;
+            }
+            a#aboutUs {
+                background-color: gray;
+                text-decoration: underline;
             }
             a:hover {
                 background-color: gray;
@@ -16,13 +23,37 @@
             }
             body {
                 background-image: url('img/bg.png');
+         
             }
             ul {
                 list-style-type: none;
             }
+            .column {
+                float: left;
+                width: 15%;
+                padding: 0 10px;
+            }
+            .row {
+                margin: 0 -5px;
+            }
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                transition: 0.3s;
+                padding: 16px;
+            }
+            .nameContainer {
+                padding: 2px 16px;
+            }
+
         </style>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
     </head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <body >
         <div id="div_header">
             <div>
@@ -30,7 +61,7 @@
             </div>
             <div id="div_menu">
                 <a href="travel_recommendation.html">Home</a>
-                <a href="about_us.html">About Us</a>
+                <a href="about_us.html" id="aboutUs">About Us</a>
                 <a href="contact_us.html">Contact Us</a>
             </div>
         </div>
@@ -38,34 +69,53 @@
             <div id="div_bodyTitle">
             <h1>About US</h1>
             </div>
-            <div id="div_bodySubtitle">
+            <div id="div_bodySubtitle" class="w3-container" >
                 <h3>
                     Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent services/products to our customers. Our mission is to provide the best experience for people travelling to different destinations around the world. Our values include integrity, innovation, customer satisfaction, and teamwork. We believe in putting our customers first and working together to achieve our goals. Feel free to explore our website to learn more about what we offer!
                 </h3>
             </div>
             <div id="div_bodyTeam">
                 <h1>Our Team</h1 >
-                <div>
-                    <h2>Saujanya</h2>
+                
+                <div class="row">
+                    <div class="column">
+                    <div class="card">
+                    <img src="img/team/shevanti.png" alt="Avatar" style="width:100%">
+                    <div class="nameContainer">
+                    <h2><b>Shevanti</b></h2>
                     <h4>Our dashing and dynamite CEO who is the brain behind the TravelBloom.</h4>
-                </div>
-                <div>
-                    <h2>Shreshtha</h2>
+                    </div>
+                    </div>
+                    </div>
+                
+                    <div class="column">   
+                    <div class="card">
+                    <img src="img/team/rose.png" alt="Avatar" style="width:100%">
+                    <div class="nameContainer">
+                    <h2><b>Rose</b></h2>
                     <h4>Our enigmatic and energetic developer who makes things happer.</h4>
-                </div>
-                <div>
-                    <h2>Shravani</h2>
-                    <h4>Our competent and cool animator who brings out the emotions behind the places we list on our website.</h4>
+                    </div>
+                    </div>
+                    </div>
+
+                    <div class="column">   
+                    <div class="card">
+                    <img src="img/team/tulip.png" alt="Avatar" style="width:100%">
+                    <div class="nameContainer">
+                    <h2><b>Tulip</b></h2>
+                    <h4>Our competent and cool animator who brings out the emotions behind the places.</h4>
+                    </div>
+                    </div>
+                    </div>
                 </div>
             </div>
-            <div id="div_smIcons">
-                <ul>
-                    <li><a href="#" target="_blank"><i class="fa-solid fa-x"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-                </ul>
+        </div>
+            <div id="div_smIcons" style=" padding: 36px;">
+                    <a href="#" target="_blank"><i class="fa-solid fa-x"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
             </div>
         </div>
     </body>
